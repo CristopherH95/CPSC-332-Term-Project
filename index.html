@@ -1,0 +1,78 @@
+<html>
+    <head>
+        <link rel="shortcut icon" href="favicon.ico"
+        type="image/x-icon">
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <style>
+            .row-buffer {
+                margin-top: 60px;
+            }
+
+            #welcomeMsg {
+                -webkit-animation: fadein 2s;
+                -moz-animation: fadein 2s;
+                -ms-animation: fadein 2s; 
+                -o-animation: fadein 2s; 
+                animation: fadein 2s;
+            }
+
+            @keyframes fadein {
+                from { opacity: 0; }
+                to { opacity: 1; }
+            }
+            
+            @-moz-keyframes fadein {
+                from { opacity: 0; }
+                to   { opacity: 1; }
+            }
+
+            @-webkit-keyframes fadein {
+                from { opacity: 0; }
+                to   { opacity: 1; }
+            }
+
+            
+            @-ms-keyframes fadein {
+                from { opacity: 0; }
+                to   { opacity: 1; }
+            }
+
+            
+            @-o-keyframes fadein {
+                from { opacity: 0; }
+                to   { opacity: 1; }
+            }
+        </style>
+        <title>University Database</title>
+    </head>
+    <body>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <a class="navbar-brand" href="#">University Database</a>
+        
+            <ul class="nav navbar-nav">
+                <li class="nav-item active"><a class="nav-link" href="index.html">Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">Students</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">Faculty</a></li>
+            </ul>
+        </nav>
+        <div class="container">
+            <div class="row justify-content-center row-buffer">
+                <h3 class="text-center">Welcome to the CPSC-332 university database</h3>
+            </div>
+            <div class="row justify-content-center row-buffer">
+                <p class="text-center">Project by: Daniel Domingo, Scott Ng, and Cristopher Hernandez</p>
+            </div>
+            <div class="row justify-content-center row-buffer">
+                <h2 class="text-center" id="welcomeMsg">What would you like to do today?</h2>
+            </div>
+            <div class="row justify-content-between row-buffer">
+                <div class="float-left ml-5 pl-5">
+                    <a class="btn btn-primary" href="#">Query Student Data</a>
+                </div>
+                <div class="float-right mr-5 pr-5">
+                    <a class="btn btn-primary" href="#">Query Faculty Data</a>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
