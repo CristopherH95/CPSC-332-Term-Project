@@ -157,7 +157,7 @@ INSERT INTO Student_Course_Grade (SecNum, CNum, CWID, Grade)
 VALUES ('04', 'CPSC-332', '9012345678', 'B');
 
 INSERT INTO Student_Course_Grade (SecNum, CNum, CWID, Grade)
-VALUES ('04', 'CPSC-332', '123456789', 'B+');
+VALUES ('04', 'CPSC-332', '4567890123', 'B+');
 
 INSERT INTO Student_Course_Grade (SecNum, CNum, CWID, Grade)
 VALUES ('04', 'CPSC-332', '678901234', 'B+');
