@@ -90,28 +90,28 @@ VALUES ('CPSC-301', 'Programming Lab Practicum', '932169836201674', 2, (SELECT D
 
 # Section Info ---------------------------------------------------------------------------------------------------------------------#
 INSERT INTO Course_Section (SecNum, CNum, Room, MDays, BegTime, EndTime, cap, Teacher)
-VALUES ('01', (SELECT CNum FROM Course WHERE CNum = 'MATH-125'), 'MH126', ('Mon', 'Wed'), 10:00:00, 11:15:00, 30, (SELECT SSN FROM Professor WHERE P_Name = 'Larry Lost'));
+VALUES ('01', (SELECT CNum FROM Course WHERE CNum = 'MATH-125'), 'MH126', ('Mon', 'Wed'), '10:00:00', '11:15:00', 30, (SELECT SSN FROM Professor WHERE P_Name = 'Larry Lost'));
 
 INSERT INTO Course_Section (SecNum, CNum, Room, MDays, BegTime, EndTime, cap, Teacher)
-VALUES ('02', (SELECT CNum FROM Course WHERE CNum = 'MATH-125'), 'MH256', ('Tue'), 10:00:00, 12:50:00, 25, (SELECT SSN FROM Professor WHERE P_Name = 'Larry Lost'));
+VALUES ('02', (SELECT CNum FROM Course WHERE CNum = 'MATH-125'), 'MH256', ('Tue'), '10:00:00', '12:50:00', 25, (SELECT SSN FROM Professor WHERE P_Name = 'Larry Lost'));
 
 INSERT INTO Course_Section (SecNum, CNum, Room, MDays, BegTime, EndTime, cap, Teacher)
-VALUES ('01', (SELECT CNum FROM Course WHERE CNum = 'CPSC-481'), 'CS105', ('Mon', 'Wed'), 12:00:00, 13:15:00, 28, (SELECT SSN FROM Professor WHERE P_Name = 'Billy Jean'));
+VALUES ('01', (SELECT CNum FROM Course WHERE CNum = 'CPSC-481'), 'CS105', ('Mon', 'Wed'), '12:00:00', '13:15:00', 28, (SELECT SSN FROM Professor WHERE P_Name = 'Billy Jean'));
 
 INSERT INTO Course_Section (SecNum, CNum, Room, MDays, BegTime, EndTime, cap, Teacher)
-VALUES ('04', (SELECT CNum FROM Course WHERE CNum = 'CPSC-332'), 'CS210', ('Fri'), 09:00:00, 11:50:00, 27, (SELECT SSN FROM Professor WHERE P_Name = 'Shawn Wang'));
+VALUES ('04', (SELECT CNum FROM Course WHERE CNum = 'CPSC-332'), 'CS210', ('Fri'), '09:00:00', '11:50:00', 27, (SELECT SSN FROM Professor WHERE P_Name = 'Shawn Wang'));
 
 INSERT INTO Course_Section (SecNum, CNum, Room, MDays, BegTime, EndTime, cap, Teacher)
-VALUES ('01', (SELECT CNum FROM Course WHERE CNum = 'CPSC-301'), 'CS105', ('Tue', 'Thu'), 14:30:00, 15:45:00, 28, (SELECT SSN FROM Professor WHERE P_Name = 'Shawn Wang'));
+VALUES ('01', (SELECT CNum FROM Course WHERE CNum = 'CPSC-301'), 'CS105', ('Tue', 'Thu'), '14:30:00', '15:45:00', 28, (SELECT SSN FROM Professor WHERE P_Name = 'Shawn Wang'));
 
 INSERT INTO Course_Section (SecNum, CNum, Room, MDays, BegTime, EndTime, cap, Teacher)
-VALUES ('02', (SELECT CNum FROM Course WHERE CNum = 'CPSC-301'), 'CS201', ('Tue', 'Thu'), 19:00:00, 20:15:00, 31, (SELECT SSN FROM Professor WHERE P_Name = 'Billy Jean'));
+VALUES ('02', (SELECT CNum FROM Course WHERE CNum = 'CPSC-301'), 'CS201', ('Tue', 'Thu'), '19:00:00', '20:15:00', 31, (SELECT SSN FROM Professor WHERE P_Name = 'Billy Jean'));
 
 INSERT INTO Course_Section (SecNum, CNum, Room, MDays, BegTime, EndTime, cap, Teacher)
-VALUES ('03', (SELECT CNum FROM Course WHERE CNum = 'CPSC-481'), 'CS115', ('Tue', 'Thu'), 17:30:00, 18:45:00, 24, (SELECT SSN FROM Professor WHERE P_Name = 'Billy Jean'));
+VALUES ('03', (SELECT CNum FROM Course WHERE CNum = 'CPSC-481'), 'CS115', ('Tue', 'Thu'), '17:30:00', '18:45:00', 24, (SELECT SSN FROM Professor WHERE P_Name = 'Billy Jean'));
 
 INSERT INTO Course_Section (SecNum, CNum, Room, MDays, BegTime, EndTime, cap, Teacher)
-VALUES ('03', (SELECT CNum FROM Course WHERE CNum = 'MATH-125'), 'MH256', ('Tue'), 11:30:00, 12:45:00, 25, (SELECT SSN FROM Professor WHERE P_Name = 'Shawn Wang'));
+VALUES ('03', (SELECT CNum FROM Course WHERE CNum = 'MATH-125'), 'MH256', ('Tue'), '11:30:00', '12:45:00', 25, (SELECT SSN FROM Professor WHERE P_Name = 'Shawn Wang'));
 
 
 # Enrollment Records --------------------------------------------------------------------------------------------------------------#
