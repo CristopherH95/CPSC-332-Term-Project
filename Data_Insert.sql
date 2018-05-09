@@ -10,6 +10,26 @@
 # Enrollment Records
 # Queries
 
+
+# Professor Info --------------------------------------------------------------------------------------------------------------------#
+INSERT INTO Professor (SSN, P_Title, P_Addr, P_Name, Sex, Salary, P_Tel)
+VALUES ('123-45-6789', 'Associate', '123 College Lane College Town, CA 12345', 'Billy Jean', 'M', 25000, '909-999-9876');
+
+INSERT INTO Professor (SSN, P_Title, P_Addr, P_Name, Sex, Salary, P_Tel)
+VALUES ('234-56-7891', 'Professor', '800 N State College Blvd, Fullerton, CA 92831', 'Shawn Wang', 'M', 50000, '657-278-7258');
+
+INSERT INTO Professor (SSN, P_Title, P_Addr, P_Name, Sex, Salary, P_Tel)
+VALUES ('368-72-2498', 'University', '642 Mini Street, Anaheim, CA 92462', 'Larry Lost', 'F', 40000, '782-657-9825');
+
+
+# Department Info -------------------------------------------------------------------------------------------------------------------#
+INSERT INTO Department (DNum, D_Name, Office, D_Tel, Chair_SSN)
+VALUES ('CPSC', 'Computer Science', 'CS452', '714-235-3654', '234-56-7891');
+
+INSERT INTO Department (DNum, D_Name, Office, D_Tel, Chair_SSN)
+VALUES ('MATH', 'Mathematics', 'MH487', '714-672-4823', '123-45-6789');
+
+
 # Student Info -----------------------------------------------------------------------------------------------------------------------# 
 INSERT INTO Student (CWID, St_Fname, St_Lname, Street, City, St_State, Zip, Tel_Area, Tel_Num, Major_Dep)
 VALUES ('123456789', 'Cristopher', 'Hernandez', '925 Nutwood Ave', 'Fullerton', 'CA', '92831', '714', '123-4567', 'CPSC');
@@ -41,24 +61,6 @@ VALUES ('9012345678', 'Kenneth', 'Patrick', '847 Garnet Ln', 'Fullerton', 'CA', 
 INSERT INTO Student (CWID, St_Fname, St_Lname, Street, City, St_State, Zip, Tel_Area, Tel_Num, Major_Dep)
 VALUES ('0123456789', 'Tammy', 'Waters', '340 Topaz Ln', 'Fullerton', 'CA', '92831', '714', '098-7654', 'MATH');
 
-
-# Department Info -------------------------------------------------------------------------------------------------------------------#
-INSERT INTO Department (DNum, D_Name, Office, D_Tel, Chair_SSN)
-VALUES ('CPSC', 'Computer Science', 'CS452', '714-235-3654', '485-26-4862');
-
-INSERT INTO Department (DNum, D_Name, Office, D_Tel, Chair_SSN)
-VALUES ('MATH', 'Mathematics', 'MH487', '714-672-4823', '672-87-9742');
-
-
-# Professor Info --------------------------------------------------------------------------------------------------------------------#
-INSERT INTO Professor (SSN, P_Title, P_Addr, P_Name, Sex, Salary, P_Tel)
-VALUES ('123-45-6789', 'Associate', '123 College Lane College Town, CA 12345', 'Billy Jean', 'M', 25000, '909-999-9876');
-
-INSERT INTO Professor (SSN, P_Title, P_Addr, P_Name, Sex, Salary, P_Tel)
-VALUES ('234-56-7891', 'Professor', '800 N State College Blvd, Fullerton, CA 92831', 'Shawn Wang', 'M', 50000, '657-278-7258')
-
-INSERT INTO Professor (SSN, P_Title, P_Addr, P_Name, Sex, Salary, P_Tel)
-VALUES ('368-72-2498', 'University', '642 Mini Street, Anaheim, CA 92462', 'Larry Lost', 'F', 40000, '782-657-9825');
 
 
 # Degree Info -----------------------------------------------------------------------------------------------------------------------#
