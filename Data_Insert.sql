@@ -56,10 +56,10 @@ INSERT INTO Student (CWID, St_Fname, St_Lname, Street, City, St_State, Zip, Tel_
 VALUES ('890123456', 'Matthew', 'Jackson', '349 Quartz Ln', 'Fullerton', 'CA', '92831', '714', '901-1234', 'MATH');
 
 INSERT INTO Student (CWID, St_Fname, St_Lname, Street, City, St_State, Zip, Tel_Area, Tel_Num, Major_Dep)
-VALUES ('9012345678', 'Kenneth', 'Patrick', '847 Garnet Ln', 'Fullerton', 'CA', '92831', '714', '012-3456', 'CPSC');
+VALUES ('901234567', 'Kenneth', 'Patrick', '847 Garnet Ln', 'Fullerton', 'CA', '92831', '714', '012-3456', 'CPSC');
 
 INSERT INTO Student (CWID, St_Fname, St_Lname, Street, City, St_State, Zip, Tel_Area, Tel_Num, Major_Dep)
-VALUES ('0123456789', 'Tammy', 'Waters', '340 Topaz Ln', 'Fullerton', 'CA', '92831', '714', '098-7654', 'MATH');
+VALUES ('012345678', 'Tammy', 'Waters', '340 Topaz Ln', 'Fullerton', 'CA', '92831', '714', '098-7654', 'MATH');
 
 
 
