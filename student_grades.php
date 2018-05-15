@@ -12,8 +12,8 @@
         
             <ul class="nav navbar-nav">
             <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
-                    <li class="nav-item active"><a class="nav-link" href="class_search.html">Search Classes</a></li>
-                    <li class="nav-item"><a class="nav-link" href="grade_search.html">Search Grades</a></li>
+                    <li class="nav-item"><a class="nav-link" href="class_search.html">Search Classes</a></li>
+                    <li class="nav-item active"><a class="nav-link" href="grade_search.html">Search Grades</a></li>
                     <li class="nav-item"><a class="nav-link" href="professor_search.html">Check Faculty Classes</a></li>
                     <li class="nav-item"><a class="nav-link" href="count_grades.html">Check Course Grades</a></li>
             </ul>
