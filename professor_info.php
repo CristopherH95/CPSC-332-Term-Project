@@ -25,7 +25,7 @@
                     echo "Error code: " . mysqli_connect_errno();
                     echo "Failed to connect to MySQL: " . mysqli_connect_error();
                 }
-                $result = mysqli_query($db_con, "SELECT c.C_Title, CS.CNum, CS.MDays, CS.BegTime, CS.EndTime
+                $result = mysqli_query($db_con, "SELECT c.C_Title, CS.CNum, CS.Room, CS.MDays, CS.BegTime, CS.EndTime
 				FROM Professor
 				INNER JOIN Course_Section CS ON Professor.SSN = CS.Teacher
 				INNER JOIN Course c ON c.CNum = CS.CNum
@@ -35,7 +35,8 @@
                     echo "<thead>";
                     echo "<tr>";
                     echo "<th scope='col'>Course Title</th>";
-                    echo "<th scope='col'>Course Section Number</th>";
+                    echo "<th scope='col'>Course Number</th>";
+					echo "<th scope='col'>Room</th>";
                     echo "<th scope='col'>Meeting Days</th>";
                     echo "<th scope='col'>Beginning Time</th>";
                     echo "<th scope='col'>End Time</th>";
