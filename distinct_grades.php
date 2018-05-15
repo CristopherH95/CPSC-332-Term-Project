@@ -18,23 +18,28 @@
         </nav>
         <div class="container">
             <?php  
-                $search_var = $_POST["search_CWID"];
-                echo "<h3>Results for search '{$search_var}'</h3>";
+                $search_var = $_POST["search_CNum"];
+                $search_var2 = $_POST["search_SecNum"];
+                echo "<h3>Results for search '{$search_var}' - '{$search_var2}'</h3>";
                 $db_con = mysqli_connect("mariadb", "cs332t9", "waufeehi", "cs332t9");
                 if (mysqli_connect_errno()) {
                     echo "Error code: " . mysqli_connect_errno();
                     echo "Failed to connect to MySQL: " . mysqli_connect_error();
                 }
-                $result = mysqli_query($db_con, "SELECT c.C_Title, g.Grade FROM Student s
-                    INNER JOIN   Student_Course_Grade g ON g.CWID = s.CWID
-                    INNER JOIN   Course c ON c.CNUM = g.CNum
-                    WHERE s.CWID = '{$search_var}'");
+                $result = mysqli_query($db_con, "SELECT Grade, COUNT(*) 
+                FROM Course c, Course_Section CS, Student_Course_Grade CSG 
+                WHERE c.CNum = '{$search_var}' 
+                    AND CS.CNum = c.CNum 
+                    AND CS.SecNum = '{$search_var2}' 
+                    AND CSG.CNum = '{$search_var}' 
+                    AND CSG.SecNum = '{$search_var2}' 
+                GROUP BY Grade");
                 if ($result) {
                     echo "<table class='table'>";
                     echo "<thead>";
                     echo "<tr>";
-                    echo "<th scope='col'>Course</th>";
                     echo "<th scope='col'>Grade</th>";
+                    echo "<th scope='col'>Count</th>";
                     echo "</tr>";
                     echo "</thead>";
                     echo "<tbody>";

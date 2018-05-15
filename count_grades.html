@@ -1,0 +1,35 @@
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="shortcut icon" href="favicon.ico"
+        type="image/x-icon">
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <title>Class Search</title>
+    </head>
+    <body>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <a class="navbar-brand" href="#">University Database</a>
+        
+            <ul class="nav navbar-nav">
+                <li class="nav-item active"><a class="nav-link" href="index.html">Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">Students</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">Faculty</a></li>
+            </ul>
+        </nav>
+        <div class="container">
+            <form action="distinct_grades.php" method="POST">
+                <div class="form-group">
+                    <label for="cNumInput">Course Number</label>
+                    <input type="text" name="search_CNum" 
+                    class="form-control" id="cNumInput" placeholder="e.g. CPSC-332"/>
+                </div>
+                <div class="form-group">
+                    <label for="secNumInput">Section Number</label>
+                    <input type="text" name="search_SecNum" 
+                    class="form-control" id="secNumInput" placeholder="e.g. 01"/>
+                </div>
+                <button type="submit" class="btn btn-primary">Search</button>
+            </form>
+        </div>
+    </body>
+</html>
