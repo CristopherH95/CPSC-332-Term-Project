@@ -22,7 +22,7 @@
             <?php  
                 $search_var = $_POST["search_CNum"];
                 echo "<h3>Results for search '{$search_var}'</h3>";
-                $db_con = mysqli_connect("mariadb", "cs332t9", "waufeehi", "cs332t9");
+                $db_con = mysqli_connect("host", "username", "password", "db");
                 if (mysqli_connect_errno()) {
                     echo "Error code: " . mysqli_connect_errno();
                     echo "Failed to connect to MySQL: " . mysqli_connect_error();
