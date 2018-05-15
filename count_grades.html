@@ -39,7 +39,8 @@
             </ul>
         </nav>
         <div class="container">
-            <form name="search_form" action="distinct_grades.php" method="POST">
+            <form name="search_form" action="distinct_grades.php" method="POST"
+            onsubmit="return checkForm()">
                 <div class="form-group">
                     <label for="cNumInput">Course Number</label>
                     <input type="text" name="search_CNum" 

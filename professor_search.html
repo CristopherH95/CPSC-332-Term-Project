@@ -30,7 +30,8 @@
             </ul>
         </nav>
         <div class="container">
-            <form name="search_form" action="professor_info.php" method="POST">
+            <form name="search_form" action="professor_info.php" method="POST"
+            onsubmit="return checkForm()">
                 <div class="form-group">
                     <label for="pSSN">Course Number</label>
                     <input type="text" name="search_pSSN" 
