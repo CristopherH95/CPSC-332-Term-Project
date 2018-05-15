@@ -41,7 +41,7 @@ INSERT INTO Student (CWID, St_Fname, St_Lname, Street, City, St_State, Zip, Tel_
 VALUES ('345678901', 'Scott', 'Ng', '1024 Yorba Linda Blvd', 'Fullerton', 'CA', '92831', '714', '345-6789', 'CPSC');
 
 INSERT INTO Student (CWID, St_Fname, St_Lname, Street, City, St_State, Zip, Tel_Area, Tel_Num, Major_Dep)
-VALUES ('456789012', 'Michael', 'Shafae', '522 N Placentia Ave', 'Fullerton', 'CA', '92831', '714', '456-7890', 'MATH');
+VALUES ('456789012', 'Michael', 'Shafae', '522 N Placentia Ave', 'xFullerton', 'CA', '92831', '714', '456-7890', 'MATH');
 
 INSERT INTO Student (CWID, St_Fname, St_Lname, Street, City, St_State, Zip, Tel_Area, Tel_Num, Major_Dep)
 VALUES ('567890123', 'Rachael', 'Greene', '24 E Chapman Ave', 'Fullerton', 'CA', '92831', '714', '567-8901', 'MATH');
@@ -140,10 +140,10 @@ INSERT INTO Student_Course_Grade (SecNum, CNum, CWID, Grade)
 VALUES ('01', 'MATH-125', '890123456', 'D+');
 
 INSERT INTO Student_Course_Grade (SecNum, CNum, CWID, Grade)
-VALUES ('01', 'MATH-125', '9012345678', 'A-');
+VALUES ('01', 'MATH-125', '901234567', 'A-');
 
 INSERT INTO Student_Course_Grade (SecNum, CNum, CWID, Grade)
-VALUES ('01', 'MATH-125', '0123456789', 'A+');
+VALUES ('01', 'MATH-125', '012345678', 'A+');
 
 # 332
 
@@ -154,7 +154,7 @@ INSERT INTO Student_Course_Grade (SecNum, CNum, CWID, Grade)
 VALUES ('04', 'CPSC-332', '890123456', 'C');
 
 INSERT INTO Student_Course_Grade (SecNum, CNum, CWID, Grade)
-VALUES ('04', 'CPSC-332', '9012345678', 'B');
+VALUES ('04', 'CPSC-332', '901234567', 'B');
 
 INSERT INTO Student_Course_Grade (SecNum, CNum, CWID, Grade)
 VALUES ('04', 'CPSC-332', '456789012', 'B+');
