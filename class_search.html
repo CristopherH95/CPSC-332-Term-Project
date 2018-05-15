@@ -8,7 +8,12 @@
         <script>
             function checkForm() {
                 let x = document.forms["search_form"]["search_CNum"].value;
-
+                let re = new RegExp('[a-zA-Z][a-zA-Z][a-zA-Z][a-zA-Z]\-[0-9][0-9][0-9]');
+                if (!x.match(re)) {
+                    alert("Error invalid input! Please try again.");
+                    document.forms["search_form"].reset();
+                    return false;
+                }
             }
         </script>
     </head>
@@ -25,7 +30,8 @@
             </ul>
         </nav>
         <div class="container">
-            <form name="search_form" action="classes_info.php" method="POST">
+            <form name="search_form" action="classes_info.php" method="POST"
+             onsubmit="return checkForm()">
                 <div class="form-group">
                     <label for="cNumInput">Course Number</label>
                     <input type="text" name="search_CNum" 
