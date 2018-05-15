@@ -26,10 +26,10 @@
                     echo "Failed to connect to MySQL: " . mysqli_connect_error();
                 }
                 $result = mysqli_query($db_con, "SELECT c.C_Title, CS.CNum, CS.MDays, CS.BegTime, CS.EndTime
-												FROM Professor
-												INNER JOIN Course_Section CS ON Professor.SSN = CS.Teacher
-												INNER JOIN Course c ON c.CNum = Course_Section.CNum
-												WHERE Professor.SSN = '$search_var'";
+				FROM Professor
+				INNER JOIN Course_Section CS ON Professor.SSN = CS.Teacher
+				INNER JOIN Course c ON c.CNum = CS.CNum
+				WHERE Professor.SSN = '$search_var'");
                 if ($result) {
                     echo "<table class='table'>";
                     echo "<thead>";
